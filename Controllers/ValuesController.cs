@@ -15,7 +15,7 @@ namespace TokenWebAPI.Controllers
         public IHttpActionResult Get()
         {
             string userid = RequestContext.Principal.Identity.GetUserId();
-            return Ok(new string[] { "value1", "value2", userid });
+            return Ok( new string[] { "value1", "value2", userid });
         }
 
         // GET api/values/5
